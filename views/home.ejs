@@ -1,0 +1,26 @@
+<%- include('partials/header', { title, page }) %>
+
+<!-- Home: must have welcome + mission, with link(s) to About/others :contentReference[oaicite:19]{index=19} -->
+<div class="row align-items-center g-4">
+  <div class="col-12 col-lg-7">
+    <h1 class="display-5 fw-bold">Welcome to My Portfolio</h1>
+    <p class="lead">I build accessible, mobile-first web applications using modern JavaScript tools.</p>
+
+    <div class="d-flex gap-3">
+      <a href="/about" class="btn btn-primary btn-lg">About Me</a>
+      <a href="/projects" class="btn btn-outline-secondary btn-lg">View Projects</a>
+    </div>
+
+    <% if (success) { %>
+      <div class="alert alert-success mt-4" role="alert">
+        Thanks! Your message was sent.
+      </div>
+    <% } %>
+  </div>
+
+  <div class="col-12 col-lg-5">
+    <img class="img-fluid rounded-3 shadow-sm" src="/images/project1.png" alt="Showcase">
+  </div>
+</div>
+
+<%- include('partials/footer') %>

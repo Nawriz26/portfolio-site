@@ -1,0 +1,17 @@
+<%- include('partials/header', { title, page }) %>
+
+<!-- About: legal name, image, short paragraph, resume PDF link :contentReference[oaicite:20]{index=20} -->
+<div class="row g-4 align-items-center">
+  <div class="col-12 col-md-4">
+    <img src="/images/me.jpg" class="img-fluid rounded-circle shadow" alt="Your Name headshot" />
+  </div>
+  <div class="col-12 col-md-8">
+    <h2 class="fw-bold">Nawriz Ibrahim</h2>
+    <p class="mb-3">
+      I’m a web developer focused on building clean, accessible, and performant experiences with Node.js, Express, and EJS.
+    </p>
+    <a href="/files/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download Resume (PDF)</a>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

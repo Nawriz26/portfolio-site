@@ -1,0 +1,50 @@
+<%- include('partials/header', { title, page }) %>
+
+<!-- Contact: info panel + interactive form; capture & redirect home :contentReference[oaicite:23]{index=23} -->
+<div class="row g-4">
+  <div class="col-12 col-lg-5">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="h4">Contact Information</h2>
+        <p class="mb-1"><strong>Email:</strong> nawriz@hotmail.com</p>
+        <p class="mb-1"><strong>Phone:</strong> +1 (226) 519-7516</p>
+        <p class="mb-0"><strong>Location:</strong> Waterloo, ON</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-7">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="h4">Send a Message</h2>
+        <form action="/contact" method="post" class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="fname">First Name</label>
+            <input class="form-control" type="text" id="fname" name="fname" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="lname">Last Name</label>
+            <input class="form-control" type="text" id="lname" name="lname" required />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="phone">Contact Number</label>
+            <input class="form-control" type="tel" id="phone" name="phone" />
+          </div>
+          <div class="col-md-6">
+            <label class="form-label" for="email">Email Address</label>
+            <input class="form-control" type="email" id="email" name="email" required />
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
