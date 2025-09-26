@@ -27,17 +27,17 @@ router.get('/projects', function(req, res) {
   const projects = [
     {
       title: 'Pizza Store Project',
-      img: '/images/p1.png',
+      img: '/images/p1.jpg',
       description: 'A responsive Express/EJS portfolio site.'
     },
     {
       title: 'Online Grocery Store Project',
-      img: '/images/p2.png',
+      img: '/images/p2.jpg',
       description: 'A small REST API built with Node and Express.'
     },
     {
       title: 'Weather App Project',
-      img: '/images/p3.png',
+      img: '/images/p3.jpg',
       description: 'A front-end SPA bootstrapped with Vite + React.'
     }
   ];
