@@ -1,8 +1,14 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+/* File: public/stylesheets/style.css
+   Student: Nawriz Ibrahim
+   StudentID: 301161181
+   Date: 2025-09-26
+   Notes: Global styling for portfolio site.
+*/
 
-a {
-  color: #00B7FF;
-}
+:root { --brand: #0d6efd; }
+
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+
+.navbar-brand img { border-radius: 8px; }
+
+.card img { object-fit: cover; height: 200px; }
