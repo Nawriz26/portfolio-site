@@ -26,18 +26,18 @@ router.get('/projects', function(req, res) {
   // Simple hardcoded projects to start; you can move this to a JSON later
   const projects = [
     {
-      title: 'Project One',
-      img: '/images/project1.png',
+      title: 'Pizza Store Project',
+      img: '/images/p1.png',
       description: 'A responsive Express/EJS portfolio site.'
     },
     {
-      title: 'Project Two',
-      img: '/images/project2.png',
+      title: 'Online Grocery Store Project',
+      img: '/images/p2.png',
       description: 'A small REST API built with Node and Express.'
     },
     {
-      title: 'Project Three',
-      img: '/images/project3.png',
+      title: 'Weather App Project',
+      img: '/images/p3.png',
       description: 'A front-end SPA bootstrapped with Vite + React.'
     }
   ];
